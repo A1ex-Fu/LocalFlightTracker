@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Live Flights Map</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+        rel="stylesheet"
+        href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    />
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <style>
+        html, body, #map {
+            height: 100%;
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+<div id="map"></div>
+<script>
+    const map = L.map('map').setView([47.6, -122.2], 8);
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        maxZoom: 19,
+    }).addTo(map);
+
+    let markerMap = new Map();
+    let polylineMap = new Map();
+    let colorMap = new Map();
+
+    // Color palette for distinct colors
+    const colors = [
+        '#e6194b', '#3cb44b', '#ffe119', '#4363d8',
+        '#f58231', '#911eb4', '#46f0f0', '#f032e6',
+        '#bcf60c', '#fabebe', '#008080', '#e6beff',
+        '#9a6324', '#fffac8', '#800000', '#aaffc3',
+        '#808000', '#ffd8b1', '#000075', '#808080'
+    ];
+
+    function hashCode(str) {
+        let hash = 0;
+        for (let i = 0; i < str.length; i++) {
+            hash = str.charCodeAt(i) + ((hash << 5) - hash);
+            hash |= 0; // Convert to 32bit integer
+        }
+        return Math.abs(hash);
+    }
+
+    function getColorForFlight(flightId) {
+        if (!colorMap.has(flightId)) {
+            const idx = hashCode(flightId) % colors.length;
+            colorMap.set(flightId, colors[idx]);
+        }
+        return colorMap.get(flightId);
+    }
+
+    async function updateFlights() {
+        try {
+            const response = await fetch("flights.json", { cache: "no-store" });
+            const data = await response.json();
+
+            data.forEach(flight => {
+                const trail = flight.trail;
+                const flightId = flight.flight;
+                const lastPoint = trail[trail.length - 1];
+                const color = getColorForFlight(flightId);
+
+                // Update or add marker (circleMarker with color)
+                if (markerMap.has(flightId)) {
+                    markerMap.get(flightId).setLatLng(lastPoint);
+                } else {
+                    const marker = L.circleMarker(lastPoint, {
+                        radius: 7,
+                        fillColor: color,
+                        color: '#000', // black border
+                        weight: 1,
+                        opacity: 1,
+                        fillOpacity: 0.8,
+                        title: flightId
+                    }).bindPopup(`
+                        <b>${flightId}</b><br>
+                        Alt: ${flight.altitude} ft<br>
+                        Speed: ${flight.speed} kt<br>
+                        <a href="https://flightaware.com/live/flight/${flightId}" target="_blank">FlightAware</a>
+                    `).addTo(map);
+                    markerMap.set(flightId, marker);
+                }
+
+                // Update or add polyline trail
+                if (polylineMap.has(flightId)) {
+                    polylineMap.get(flightId).setLatLngs(trail);
+                } else {
+                    const polyline = L.polyline(trail, { color: color }).addTo(map);
+                    polylineMap.set(flightId, polyline);
+                }
+            });
+        } catch (err) {
+            console.error("Error fetching flight data:", err);
+        }
+    }
+
+    setInterval(updateFlights, 2000);
+    updateFlights();
+</script>
+</body>
+</html>

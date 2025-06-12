@@ -1,0 +1,99 @@
+This is DO README FIRST !!!.TXT
+
+A complete description is available from the OPERATING MANUAL at
+http://rtl1090.jetvision.de  - Select RTL1090 manual from the side bar
+
+rtl1090 (Updated for Build 100)
+=======
+
+Non tunable 1090 MHz receiver for Mode-A/C or Mode-S
+Mode-AC and Mode-S cannot be output at the same time
+
+Required:
+E4000* or R820T and RTL2832U USB DVB-T Dongle
+
+*ATTENTION: not all these devices cover 1090 MHz. You can explore the
+edges of your devices frequency coverage by using the MAX/MIN button after the
+device was started.
+
+IF YOU HAVE RUN SDRSHARP or a similar software with your USB dongle successfully before,
+you can skip the "Zadig" installation instruction!
+
+Installation (not good for upgrade to a newer build)
+============
+- Download the latest "Zadig" installation package from
+http://sourceforge.net/projects/libwdi/files/zadig/
+WIN XP-users >>> select the package named "_XP_"
+
+- Plug-in your USB-TV-Stick, ignore and abort driver installation messages
+
+- Execute "zadig.exe"
+
+- Install the WinUSB driver and the driver for "Bulk-In Interface 0"
+(A more comprehensive list of installation instructions is here:
+http://rtlsdr.org/softwarewindows )
+The installation is only valid for one specific USB slot.
+If you use another slot later you must repeat the installation.
+
+- Download and unzip the application files to a directory of your
+choice
+
+- Download this file
+http://sdr.osmocom.org/trac/raw-attachment/wiki/rtl-sdr/RelWithDebInfo.zip
+and unzip and copy rtl-sdr-release\x32\rtlsdr.dll, msvcr100.dll and libusb-1.0.dll
+to your application folder
+
+ATTENTION: temporary unavailability of this file:
+Please read FAQ from http://rtl1090.jetvision.de if you cannot find this file
+
+The following files should be in your folder now:
+
+rtl1090.exe
+libusb-1.0.dll
+msvcr100.dll
+rtlsdr.dll
+
+Now execute rtl1090.exe.
+
+The application opens a TCP server on port 31001 (for the first dongle) and this will be
+queried by the Windows Firewall. To run rtl1090 together with
+Planeplotter this needs to be acknowledged.
+
+For a quick start select RTL AGC and TUNER AGC.
+This is the best setting for best range.
+If you encounter doughnut problems from nearby targets, then switch
+off TUNER AGC and select a high (if not the highest) gain value.
+
+Thats all.
+
+For the many more functions of RTL1090 and other software derivatives like RTL1030 
+or RTL-UVD or RTL-DUO please visit our website http://rtl1090.jetvision.de
+
+
+===========================================================
+
+Planeplotter settings
+=====================
+
+rtl1090 opens a TCP socket at port 31001 (for the first dongle)
+
+Select "Mode-S/ADS-B" and "RTL Dongle" in I/O dialog
+
+Press green button and wait for green led in rtl1090
+
+Output data format on TCP port
+==============================
+rtl1090 uses the Beast binary data format
+<0x1a> <"1">  6 byte MLAT, 1 byte signal level, 2 byte Mode-AC
+<0x1a> <"2">  6 byte MLAT, 1 byte signal level, 7 byte Mode-S short frame
+<0x1a> <"3">  6 byte MLAT, 1 byte signal level, 14 byte Mode-S long frame
+<0x1a><0x1a>  true 0x1a
+
+MLAT: the counter has a resolution of 500 ns for Mode-S and 488 ns for Mode A/C
+
+Signal level: 0..255
+
+---------------------------------------------------------
+All rights of this software reserved
+(c) jetvision.de 2013
+

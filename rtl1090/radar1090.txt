@@ -1,0 +1,458 @@
+;radar1090.txt please edit not used entries and names too long
+;select only codes maximim 400-600km away from your home
+;SI6  CH Geneva1 (example, lines with colon's are not shown)
+;II1  CY Kio
+;II1  GB Belfast
+;II1  GB Newquay Airport
+;II1  GE Tiblisi Airport
+;II1  NO Bardufoss
+;II1  NO Torp
+;II1  RS Kosevac
+;II1  SA Al-Wejah
+;II1  SA KKIA
+;II1  UA Odesa
+;II10 AZ Qabala 1
+;II10 BY Hrodna
+;II10 KZ Balkhash
+;II10 SA AFIF
+;II10 SA Turaif
+;II10 TR Dalaman
+;II10 TR Merzifon
+;II10 UA Dnipropetrovsk2
+;II11 BG Vitosha
+;II11 DE Düsseldorf Süd South Cluster main
+;II11 DE Frankfurt Süd South Cluster main
+;II11 DE Gosheim South Cluster main
+;II11 DE Großhaager Forst South Cluster main
+;II11 DE München Süd South Cluster main
+;II11 DE Neunkirchner Höhe South Cluster main
+;II11 EG Cairo ERR
+;II11 GB Cromer
+;II11 GE Senaki
+;II11 HU Ferihegy TAR2
+;II11 OM Muscat
+;II11 SA Harad
+;II11 SA Soda
+;II11 TN Kef Ensour
+;II11 TR Antalya PSR
+;II12 EE Muhu
+;II12 JO ModeS-1
+;II13 GB Belfast City
+;II13 GB Burrington SSR
+;II13 GB Sumburgh
+;II13 IL GCU North
+;II13 KZ Aktau
+;II13 KZ Kostanay
+;II13 KZ Kyzylorda
+;II13 TR Izmir Akdag
+;II13 TR Trabzon
+;II14 ES Madrid
+;II14 GB Boscombe Down
+;II14 GB Cowes IOW
+;II14 GB Matching Green
+;II14 SI Kogel
+;II2  BA Jahorina
+;II2  BY Mahiliou
+;II2  EG Aswan ERR
+;II2  GB Allanshill
+;II2  GB Debden
+;II2  LB Baysour
+;II2  NO Heidrun
+;II2  NO Kirkenes
+;II2  SA ABHA
+;II2  SA Hail
+;II2  TR Adnan Menderes
+;II2  TR Agri
+;II3  BY Minsk 2
+;II3  DE Auersberg North Cluster main
+;II3  DE BBN North Cl. Main
+;II3  DE Brocken North Cluster main
+;II3  DE Deister North Cluster main
+;II3  DE Nordholz North Cluster main
+;II3  DE POEMS Düsseldorf N. North Cluster main
+;II3  DE Schmooksberg North Cluster main
+;II3  DE Tegel North Cluster main
+;II3  EG Asyut ERR
+;II3  HU Bekescsaba
+;II3  NO Alta
+;II3  SA Gassim
+;II3  TN Borj Jelij
+;II3  TR Istanbul PSR-MSSR
+;II3  TR K.K.T.C. Agirdagi
+;II4  BH Site 116
+;II4  CY Larnaka
+;II4  GE Poti Airport
+;II4  LV Cirava
+;II4  SA Madinah
+;II4  TR Yenibosna
+;II5  EG Hurghada ERR
+;II5  GB Clee Hill
+;II5  GB Stornoway2
+;II5  LV EVRR
+;II5  SA Rafha
+;II5  TR Antalya
+;II5  TR Batman
+;II5  UA Borispol2
+;II6  EG Messa Matruh ERR
+;II6  GE Tiblisi Hill
+;II6  KZ Beyneu
+;II6  KZ Taraz
+;II6  SA BAHA
+;II6  SA Qaisumah
+;II6  SA Tabuk
+;II7  GB Inverness Airport
+;II7  KW Kuwait ASR
+;II7  NO Vardasen
+;II7  SA Khayber
+;II7  SA Shaybah
+;II7  SA Wadi Al-Dawasir
+;II7  TR Inebolu
+;II7  TR K.K.T.C. Ercan
+;II7  UA Borispol
+;II8  CY Lara
+;II8  EE EEKV
+;II8  RS Koviona
+;II8  SA Al Jouf
+;II8  SA Kaia
+;II8  SA KFIA
+;II8  SA Sharurah
+;II8  TR Erzurum
+;II8  UA Simferopol2
+;II9  BH Site 117
+;II9  DE Auersberg North Cluster FB
+;II9  DE BBN North Cl. FB
+;II9  DE Brocken North Cluster FB
+;II9  DE Deister North Cluster FB
+;II9  DE Düsseldorf Süd South Cluster FB
+;II9  DE Frankfurt Süd South Cluster FB
+;II9  DE Gosheim South Cluster FB
+;II9  DE Großhaager Forst South Cluster FB
+;II9  DE München Süd South Cluster FB
+;II9  DE Neunkirchner Höhe South Cluster FB
+;II9  DE Nordholz North Cluster FB
+;II9  DE POEMS Düsseldorf N. North Cluster FB
+;II9  DE Schmooksberg North Cluster FB
+;II9  DE Tegel North Cluster FB
+;II9  IL GCU South
+;II9  KZ Semey
+;II9  KZ Uralsk
+;II9  KZ Zhezkazgan
+;II9  LV ERGLI
+;II9  SA Training
+;II9  TR Esenboga Mira
+;SI10 GB Staxton Wold
+;SI10 SI Ljubljana
+;SI12 GB BAE Warton a/d
+;SI12 HU Kirishegy
+;SI12 TR Ermenek
+;SI13 DE Auenhausen AH FB
+;SI13 DE Berlin Tempelhof FB
+;SI13 DE Brockzetel BZ FB
+;SI13 DE Cölpin CO FB
+;SI13 DE Döbern DO FB
+;SI13 DE Döbraberg DB FB
+;SI13 DE Elmenhorst EH FB
+;SI13 DE Erbeskopf EK FB
+;SI13 DE Gleina GL FB
+;SI13 DE Großer Arber GA FB
+;SI13 DE Lauda LA FB
+;SI13 DE Putgarten PU FB
+;SI13 DE Visselhoevede VH FB
+;SI20 BA Sarajevo
+;SI20 GB Claxby
+;SI21 BG Varbitza
+;SI21 HR Kozjak
+;SI22 GB Trimingham T92
+;SI22 HR Borinci
+;SI22 TR Bahce Akcadag
+;SI24 GB Manchester
+;SI24 GB Stornoway1
+;SI25 SI Turn
+;SI26 GB Glasgow
+;SI28 GB Bournemouth
+;SI28 SK Velky Javornik
+;SI28 TR Eglence (Kuyutepe)
+;SI28 TR Erzincan Karadag
+;SI29 LT EYVI
+;SI36 GB Kent Intl
+;SI36 GB RRH Brizlee Wood
+;SI36 HU Bankut
+;SI37 HR Ucka
+;SI38 DE Fassberg FG FB
+;SI38 DE Hohn HN FB
+;SI38 DE Nordholz NZ FB
+;SI38 DE Schleswig-Jagel SG fbk
+;SI38 DE Wittmund WD FB
+;SI38 GB RHR Buchan
+;SI38 HU Püspökladány
+;SI38 LT EYPA
+;SI38 UA Odesa-2
+;SI39 SI Kogel
+;SI40 GB Great Dun Fell
+;SI41 SI OLS
+;SI42 GB Portreath T102
+;SI44 DE Bückeburg FB
+;SI44 DE Fritzlar FR FB
+;SI44 DE Nörvenich NH FB
+;SI44 DE Rheine Bentlage RE FB
+;SI44 DE Trollenhagen TN
+;SI44 DE Wunstorf WF FB
+;SI44 GB Lowther Hill
+;SI44 TR Milas-Kucuksungur
+;SI44 TR Urfa Korcik MSSR
+;SI44 UA Simferopol
+;SI45 HR Papuk
+;SI5  HR Sljeme
+;SI52 GB St. Annes
+;SI54 GB Cardiff Intl
+;SI54 GB Doncaster Sheff
+;SI54 GB RHR Benbecula
+;SI54 HR Pleso
+;SI55 SI Vrhnika
+;SI56 GB Belfast Intl
+;SI56 GB Oxford Airport
+;SI57 HR Psunj
+;SI57 UA Lviv
+;SI6  GB Bovingdon
+;SI6  GB Tiree
+;SI6  LT EYKA
+;SI6  RS Murtenica
+;SI6  SK Bratislava
+;SI6  TR Yalova MSSR
+;SI60 GB Pease Pottage
+;SI60 TR Esenboga PSRMSSR
+;SI60 UA Dnipropetrovsk
+;SI61 HR Rota
+;SI8  GB Burrington Cmb
+;SI8  GB Perwinnes
+;SI9  SK Velky Bucen
+II1  CH Holberg2
+II1  CZ Pisek
+II1  DE Büchel
+II1  DE Laage LE main
+II1  DE Neubrandenburg main
+II1  FR Biarritz
+II1  FR Charles de Gaulle
+II1  GB Lakenheath
+II1  IT Monte Lesima
+II1  IT Ustica
+II1  PL Szypliszki
+II1  PT Beja MSSR
+II1  PT ER4 MSSR
+II1  PT Lajes MSSR
+II10 DK Kastrup
+II10 ES Valladolid
+II10 MA Casablanca CRD
+II10 RO Bucharest
+II11 DE South Cluster
+II11 ES Valdespina
+II11 FR Pierre-sur-Haute
+II11 IE Shannon
+II11 IT Firenze
+II11 IT Lamezia
+II11 MA El Jadida
+II11 PL Chrusciel
+II13 ES Solorzano 
+II13 MA Oujda
+II13 RO Constanta
+II14 BE EADS2000
+II14 CH Birrfeld
+II14 CH Dübendorf
+II14 CH Mollis
+II14 CH Nollen
+II14 CH Seebach
+II14 CH Torny
+II14 CZ Pardubice MSSR
+II14 DE Erbach
+II14 DE Götzenhain
+II14 DE Greding
+II14 DE Ulm ULM
+II14 DE USH
+II14 FR Cazeux CEV
+II14 FR IdentUnit0+1
+II14 FR Limours
+II14 FR ToulouseExp
+II14 FR Ymare
+II14 GB POEMS Gatwick
+II14 IT SELEX Roma
+II14 NL Hengelo
+II15 XX AWACS
+II2  CH Geneva2bis
+II2  CZ Sokolnice
+II2  ES Gran Canaria
+II2  ES Palma
+II2  IE Mt Gabriel2
+II2  IT Poggio Lecceta
+II2  LU Luxembourg-T2+3
+II2  MA Marrakech
+II2  MD Kishinau (LUKC)
+II2  MT Hal Far
+II2  PT MTR MSSR
+II3  DE North Cluster
+II3  ES Alcolea
+II3  FR ParisSud
+II3  IE Dublin3
+II3  IT Napoli
+II3  IT Peschiera
+II3  MA Tantan
+II4  ES Alicante
+II4  MA Agadir
+II5  BE StHubert
+II5  ES ParacuellosI
+II5  MA Safi
+II6  MA Casablanca
+II7  ES Monflorite
+II7  ES Tenerife
+II7  IE Woodcock Hill
+II7  MA Ifrane
+II7  NL Leeuwarden
+II7  NL Soesterberg
+II7  NL Twenthe
+II7  NL Volkel
+II7  NL Woensdrecht
+;II8  AU Linz
+II8  BE Brussels
+II8  CH Lägern
+II8  FR Montpellier
+II8  IT Maccarese
+;II8  MA Tanger
+II8  PL Labunie
+II9  DE N + S Cluster FB
+II9  ES Begas
+II9  ES MalagaI
+II9  FR Tours
+II9  GB Gatwick
+II9  IE Mt Gabriel1
+II9  IT Monte Codi
+SI10 CH La Dôle
+SI10 CZ Prague
+SI10 IT Masseria Orimini
+SI10 IT Olbia
+SI12 FR ParisNord
+SI12 FR Toulouse Blagnac
+SI12 IT MalpensaII
+SI13 DE GAF FB
+SI13 FR Marseille
+SI14 DE Ulm ULM
+SI14 FR Cazeux CEV
+SI19 GB Southend
+SI20 AU VIE2
+SI20 DE Bückeburg
+SI20 DE Fritzlar FR main
+SI20 DE Holzdorf HF
+SI20 DE Nörvenich NH
+SI20 DE Rheine Bentlage RE
+SI20 DE Wunstorf WF
+SI20 FR Limoges
+SI20 IT Lambro
+SI21 CH Holberg1
+SI21 CZ Nepolisy
+SI21 FR MontVentoux
+SI22 DE Spangdahlem
+SI22 FR Bordeaux
+SI22 IT Bergamo
+SI22 IT Marsala
+SI23 AU LOXZ (Zeltweg)
+SI23 DE GAF FB
+SI23 DE Ingolstadt-Manching fbk
+SI23 DE Laupheim LM FB
+SI23 DE Neuburg NG FB
+SI23 DE Niederstetten NN fbk
+SI23 IT Bologna
+SI23 PL Wroclaw
+SI24 GB Guernsey Airport
+SI26 FR Boulogne
+SI26 IE Cork
+SI26 IT Portogruaro
+SI28 IE Dublin2
+SI28 IT Mortara
+SI28 IT Otranto
+SI28 NL Schiphol TAR1
+SI29 DE Döbraberg DB main
+SI29 DE Gleina GL main
+SI29 DE Großer Arber GA main
+SI29 DE Lauda LA main
+SI3  GB Heathrow 10cm
+SI30 DE Wilhelmshaven
+SI30 FR Limours
+SI36 FR Chaumont
+SI36 IT Bari
+SI36 IT Cima Canestreddu
+SI36 IT Venezia
+SI37 CH Pays
+SI38 BE Bertem
+SI38 DE Celle CE FB
+SI38 DE GAF FB
+SI38 FR Brest
+SI38 FR Grenoble
+SI38 IT Capo Rizzuto
+SI38 IT Ronchi dei Legion
+SI39 IT Genova
+SI4  AU Kolomansberg
+SI4  BE Liege
+SI4  DE Laage LE FB
+SI4  DE Neubrandenburg FB
+SI4  FR Quimper-St Goazec
+SI4  GB Stansted
+SI4  IE Crockalough
+SI4  IT Colle Marmo
+SI42 DE Geilenkirchen
+SI44 AU SPK (Speikkogel)
+SI44 DE GAF FB
+SI44 FR Avranches
+SI44 FR Grasse
+SI44 IT Monte Stella
+SI45 DE Auenhausen AH main
+SI45 DE Brockzetel BZ main
+SI45 DE Erbeskopf EK main
+SI45 DE Visselhoevede VH main
+SI46 FR Ymare
+SI5  FR Nice
+SI5  IT Mezzogregorio
+SI52 AU LOXT (Langenlebarn)
+SI52 BE EBOS ModeS
+SI52 DE Lechfeld LD main
+SI52 DE Ramstein
+SI52 GB Jersey Airfield
+SI52 IT Roma FiumicinoI
+SI52 RO Manastur
+SI53 AU KOR
+SI53 IT Borgo Sabotino
+SI54 BE Semmerzake
+SI54 DE Ingolstadt-Manching main
+SI54 DE Laupheim LM main
+SI54 DE Neuburg NG main
+SI54 DE Niederstetten NN main
+SI54 IT Torino
+SI54 PL Poznan
+SI55 FR Nevers
+SI6  BE EBFS ModeS
+SI6  CH Geneva1
+SI6  DE ASR-S Erbach
+SI6  DE Todendorf
+SI6  FR La Roche-sur-Yon
+SI6  IT Palermo
+SI6  IT Ravenna
+SI60 AU STM (Steinmandl)
+SI60 DE Celle CE main
+SI60 DE Fassberg FG main
+SI60 DE Hohn HN main
+SI60 DE Nordholz NZ main
+SI60 DE Schleswig-Jagel SG main
+SI60 DE Wittmund WD main
+SI60 FR Auch
+SI60 FR Grand Ballon
+SI60 IE Dooncarton
+SI60 IT Roma FiumicinoII
+SI60 XX UNMIK Pristina
+SI61 DE Berlin Tempelhof main
+SI61 DE Cölpin CO main
+SI61 DE Döbern DO main
+SI61 DE Elmenhorst EH main
+SI61 DE Putgarten PU main
+SI61 IT MalpensaI
+SI62 FR ToulouseExp
+SI7  CZ Bukop
+SI7  DE Kaufbeuren
+SI7  IT Potenza Picena
+
